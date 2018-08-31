@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://static.platzi.com/media/public/uploads/index_6b73aa5d-ef6a-4fa4-9ad6-521c9d61e8ed.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Tamaño de item en filas</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      grid-template-rows: repeat(4, 100px);
+      height: 100vh;
+      grid-gap: 5px;
+
+      /* DENTRO DEL ITEM DOS PROPIEDADES */
+      /* justify-items: start end center stretch; */
+      /* align-items: start end center stretch; */
+      /* ----------- */
+      /* Para alinear el contenido de filas y columnas:
+          justify-content: valor; horizontal
+          align-content: valor; vertical
+
+          Pata distribuir uniformemente:
+          Con space-around Los items tienen el mismo espacio a su alrededor
+          Con space-evenly Hay un espacio mas homogeneo entre items
+          Con space-between El primer item al inicio, el último al final */
+          
+    }
+    .item {
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid red;
+      /*margin-right: 10px;*/
+      /*margin-bottom: 10px;*/
+    }
+    .item:nth-of-type(5){
+      /* align-self: center;
+      justify-self: end; */
+    }
+    
+
+  </style>
+</head>
+<body cz-shortcut-listen="true">
+  <section class="container">
+    <div class="item">item #1</div>
+    <div class="item">item #2</div>
+    <div class="item">item #3</div>
+    <div class="item">item #4</div>
+    <div class="item">item #5</div>
+    <div class="item">item #6</div>
+    <div class="item">item #7</div>
+    <div class="item">item #8</div>
+    <div class="item">item #9</div>
+    <div class="item">item #10</div>
+    <div class="item">item #11</div>
+    <div class="item">item #12</div>
+  </section>
+
+
+</body></html>

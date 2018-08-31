@@ -1,0 +1,29 @@
+Unidad de medida: fracciones fr distrubuye el espacio disponible en formas iguales.
+Funciones:
+repeat(cantidad, valor) para usar el mismo valor varias veces
+minmax(min, max) agregar un valor minimo y maximo para el tama�o al hacer responsive
+
+AREAS DE CONTENIDO
+
+Para definir las areas
+Si vamos a usar area en m�s de una columna colocamos el mismo donde del area donde la queramos. Ejemplo:
+
+grid-template-areas: "header header"
+                                 "left contenido"
+                                 "footer footer";
+Para usar estas areas:
+
+.header {
+	grid-area: header:
+}
+
+Para alinear contenido:
+justify-items: valor; para alineaci�n horizontal
+align-items: valor; para alineaci�n vertical
+Los valores que toman por defecto es stretch el cual hace que tomen todo el valor asignado en la fila o columna.
+
+Para asignar la alineaci�n de un solo elemento podemos usar:
+
+align-self: valor;
+justify-self: valor;
+
